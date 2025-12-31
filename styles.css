@@ -254,3 +254,132 @@ body {
   }
 }
 
+/* ========================= */
+/* RESPONSIVE PRO – ZazoEdition */
+/* ========================= */
+
+/* Tipografía fluida (mejor escala general) */
+.hero-content h2 {
+  font-size: clamp(28px, 6vw, 56px);
+}
+
+.hero-content p {
+  font-size: clamp(14px, 2.5vw, 16px);
+}
+
+/* Tablets grandes */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 16px 28px;
+  }
+
+  .nav-links {
+    gap: 24px;
+  }
+
+  .hero {
+    min-height: 80vh;
+  }
+}
+
+/* Tablets / móviles */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav-links {
+    width: 100%;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .account-btn {
+    margin-top: 6px;
+    padding: 9px 16px;
+    font-size: 13px;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 72vh;
+    padding: 36px 16px;
+  }
+
+  .divider {
+    margin-bottom: 24px;
+  }
+
+  .cta-btn {
+    padding: 12px 28px;
+    font-size: 13px;
+  }
+}
+
+/* MÓVIL */
+@media (max-width: 520px) {
+
+  /* NAVBAR COMPACTA */
+  .navbar {
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .logo img {
+    height: 36px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    row-gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 68vh;
+  }
+
+  .hero-content {
+    padding: 0 8px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    max-width: 260px;
+  }
+}
+
+/* MÓVIL PEQUEÑO */
+@media (max-width: 380px) {
+
+  .hero {
+    min-height: 64vh;
+  }
+
+  .cta-btn {
+    padding: 11px 22px;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+  }
+}
+
+/* Reduce animación en dispositivos lentos */
+@media (prefers-reduced-motion: reduce) {
+  .hero-bg {
+    animation: none;
+  }
+}
