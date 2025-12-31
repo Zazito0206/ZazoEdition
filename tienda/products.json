@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "title": "Overlay Tiktok Gratis",
+    "category": "Overlays",
+    "price": "Gratis",
+    "originalPrice": "$5.00",
+    "image": "/imgproductos/OVERLAY-TIKTOK-GRATIS.png",
+    "downloadUrl": "/PRODUCTOS-GRATIS-DESCARGAS/OVERLAY-TIKTOK-GRATIS.zip",
+    "rating": 5,
+    "soldOut": false
+  },
+  {
+    "id": 2,
+    "title": "Overlay Para Live",
+    "category": "Overlays",
+    "price": "$5.00",
+    "originalPrice": "$10.00",
+    "image": "/imgproductos/OVERLAYS-PARA-LIVE.png",
+    "rating": 0,
+    "soldOut": false
+  }
+]

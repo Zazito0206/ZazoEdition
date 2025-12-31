@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carrito — ZazoEdition</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="store-header">
+    <nav class="navbar">
+      <div class="logo"><img src="/img/ZazoEdition-SinFondo.png" alt="ZazoEdition"></div>
+      <div class="nav-links">
+        <a href="/Inicio.html">Inicio</a>
+        <a href="index.html">Tienda</a>
+        <a class="active" href="carrito.html">Carrito</a>
+      </div>
+      <button class="account-btn"><i data-lucide="user"></i>Mi Cuenta</button>
+    </nav>
+  </header>
+
+  <main class="store-container" style="grid-template-columns: 1fr;">
+    <section class="products" style="padding:50px;">
+      <h1 style="margin-bottom:18px;">Tu carrito</h1>
+
+      <div id="cartEmpty" style="color:#bdbdbd; display:none;">Tu carrito está vacío.</div>
+
+      <div id="cartItems" class="cart-list"></div>
+
+      <div id="cartSummary" style="margin-top:24px;"></div>
+    </section>
+  </main>
+
+  <script src="carrito.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>ZazoEdition | Tienda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="store-header">
+
+  <nav class="navbar">
+    <div class="logo">
+      <img src="/img/ZazoEdition-SinFondo.png" alt="ZazoEdition">
+    </div>
+
+    <div class="nav-links">
+      <a class="active" href="/Inicio.html">Inicio</a>
+      <a href="/tienda/index.html">Tienda</a>
+      <a href="#">Contacto</a>
+    </div>
+
+<!-- acciones de la derecha: carrito primero, luego cuenta -->
+<div class="nav-actions">
+  <button id="cartBtn" type="button" class="account-btn" onclick="location.href='/tienda/carrito.html'">
+    <i data-lucide="shopping-cart"></i>
+    <span id="cartCount" class="cart-count">0</span>
+  </button>
+
+  <button id="accountBtn" type="button" class="account-btn light">
+    <i data-lucide="user"></i>
+    Mi Cuenta
+  </button>
+</div>
+
+  </nav>
+</header>
+
+<main class="store-container">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <h3>Buscar</h3>
+    <input type="text" id="searchInput" placeholder="Buscar productos...">
+
+    <h3>Categorías</h3>
+    <ul id="categoryList"></ul>
+  </aside>
+
+  <!-- PRODUCTOS -->
+  <section class="products">
+    <div class="products-header">
+      <span id="resultsCount">Cargando productos...</span>
+    </div>
+
+    <div id="productsGrid" class="products-grid"></div>
+  </section>
+
+</main>
+
+<script src="app.js"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+</body>
+</html>
