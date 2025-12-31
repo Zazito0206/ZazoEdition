@@ -598,3 +598,94 @@ body {
     font-size: 12px;
   }
 }
+/* ========================= */
+/* 🛒 RESPONSIVE CARRITO */
+/* ========================= */
+
+/* Tablets */
+@media (max-width: 900px) {
+
+  #cartItems,
+  .cart-list {
+    gap: 14px;
+  }
+
+  .cart-list .cart-item,
+  #cartItems .cart-item {
+    padding: 14px;
+    gap: 14px;
+  }
+}
+
+/* MÓVIL */
+@media (max-width: 600px) {
+
+  /* Item del carrito en columna */
+  .cart-list .cart-item,
+  #cartItems .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  /* Imagen o info ocupa todo */
+  .cart-item img {
+    width: 100%;
+    max-width: 140px;
+    border-radius: 10px;
+  }
+
+  /* Controles de cantidad */
+  .cart-item .qty-btn {
+    padding: 8px 14px;
+    font-size: 15px;
+  }
+
+  .cart-item .qty {
+    min-width: 36px;
+    font-size: 15px;
+  }
+
+  /* Botón eliminar más accesible */
+  .remove-btn {
+    align-self: flex-end;
+    font-size: 14px;
+  }
+
+  /* Botón comprar / checkout */
+  #cartSummary .btn-primary {
+    width: 100%;
+    padding: 14px;
+    font-size: 15px;
+  }
+}
+
+/* MÓVIL PEQUEÑO */
+@media (max-width: 420px) {
+
+  .cart-list .cart-item,
+  #cartItems .cart-item {
+    padding: 12px;
+  }
+
+  .cart-item .qty-btn {
+    padding: 8px 12px;
+  }
+
+  .remove-btn {
+    font-size: 13px;
+  }
+}
+
+/* EXTRA: mejora táctil */
+@media (pointer: coarse) {
+
+  .cart-item .qty-btn {
+    min-height: 44px;
+  }
+
+  .remove-btn {
+    padding: 6px 8px;
+  }
+}
+
