@@ -8,7 +8,7 @@
     "image": "/imgproductos/OVERLAY-TIKTOK-GRATIS.png",
     "downloadUrl": "/PRODUCTOS-GRATIS-DESCARGAS/OVERLAY-TIKTOK-GRATIS.zip",
     "rating": 5,
-    "soldOut": false
+    "soldOut": true
   },
   {
     "id": 2,
@@ -20,4 +20,5 @@
     "rating": 0,
     "soldOut": false
   }
+
 ]
