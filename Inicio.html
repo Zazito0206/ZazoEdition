@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZazoEdition</title>
+
+  <!-- Fuente -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <!-- Íconos -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="img/ZazoEdition-SinFondo.png" alt="ZazoEdition">
+    </div>
+
+    <div class="nav-links">
+      <a class="active" href="#">Inicio</a>
+      <a href="tienda/index.html">Tienda</a>
+      <a href="#">Contacto</a>
+    </div>
+
+    <button class="account-btn">
+      <i data-lucide="user"></i>
+      Mi Cuenta
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <main class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <p>Recursos premium y gratuitos para creadores</p>
+      <h2>Eleva tu Edición</h2>
+      <div class="divider"></div>
+      <button type="button" class="cta-btn" onclick="location.href='tienda/index.html'">Ir a la Tienda</button>
+    </div>
+  </main>
+
+  <script>
+    lucide.createIcons();
+  </script>
+
+</body>
+</html>
